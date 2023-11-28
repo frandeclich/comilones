@@ -1,0 +1,56 @@
+import index.*
+
+const empanada = new Comida (valor = 5)
+const alfajor = new Comida(valor = 10)
+const escabeches = new Comida(valor = 30)
+
+
+const loDeLucas = new PuestoComida(km= 100, integrantes= ["Lucas", "Claudia"], dinero=1500, catalogo=[tortasFritas, empanada, alfajor])
+const loDeFrande = new PuestoComida(km= 10, integrantes= ["frande", "Claudia"], dinero=3000, catalogo=[dorado, empanada, bogaALaPizza])
+const loDeNacho = new PuestoComida(km= 1, integrantes= ["Nacho", "Claudia"], dinero=1, catalogo=[escabeches])
+const loDeEric = new PuestoComida(km= 12, integrantes= ["Eric", "Claudia"], dinero=12, catalogo=[escabeches, empanada])
+
+const laPreciosa = new EstacionPolicia(km = 42, integrantes= ["Ricardo", "Ricarda","Ricardón", "Ricardita", "Ricardito"])
+const laSolitaria = new EstacionPolicia(km = 10, integrantes= ["Guillermo"])
+
+const todosLosEspacios=[loDeLucas, loDeFrande, loDeNacho, loDeEric, laPreciosa, laSolitaria]
+
+test "La preciosa es la delegada porque tiene más integrantes"{
+	ruta.todosLosEspacios(todosLosEspacios)
+	assert.equals(laPreciosa, ruta.delegado())
+}
+
+test "Hay una urgencia y la preciosa deja de ser la delegada porque echaron a todos" {
+	ruta.todosLosEspacios(todosLosEspacios)
+	ruta.urgenciaTotal(125)
+	
+	assert.notEquals(laPreciosa, ruta.delegado())
+}
+test "En la urgencia, Lo de Nacho gana 600 pesos"{
+	ruta.todosLosEspacios(todosLosEspacios)
+	const dineroInicial= loDeNacho.dinero()
+	ruta.urgenciaTotal(125)
+	assert.equals(dineroInicial + 600, loDeNacho.dinero())
+}
+test "Después de la urgencia, Lo de Eric está en el km 125"{
+	ruta.todosLosEspacios(todosLosEspacios)
+	ruta.urgenciaTotal(125)
+	
+	assert.equals(125, loDeEric.km())
+}
+
+
+test "Si Lucas vende 50 tortas fritas, obtiene 600 pesos"{
+	const dineroInicial = loDeLucas.dinero()
+	loDeLucas.vender(tortasFritas, 50)
+	
+	assert.equals(dineroInicial + 600, loDeLucas.dinero()
+}
+
+test "Si Lucas vende 1 torta frita, y luego quiere vender 50, sólo gana 12 pesos, lo equivalente a una torta frita"{
+	const dineroInicial = loDeLucas.dinero()
+	loDeLucas.vender(tortasFritas, 1)
+	loDeLucas.vender(tortasFritas, 50)
+	
+	assert.equals(dineroInicial + 12, loDeLucas.dinero()
+}
