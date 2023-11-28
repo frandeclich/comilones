@@ -11,7 +11,7 @@ Con cualquier producto, se otorga el dinero que vale al puesto
 
 En la ruta también hay otro tipo de espacios, como las estaciones de policías. Ellas se establecen en un lugar (pueden mudarse a otro km de la ruta), y tienen una delegación, que puede ser echada en cualquier momento por las altas autoridades.
 
-La comisión de la Ruta de los Comilones conoce todos los espacios de la ruta, y uno de estos es el espacio delegado, quien es el que más integrantes tenga. Si hay una urgencia total en un kilómetro dado, todos los espacios, sin importar qué sean, se mudan a ese kilómetro a ayudar.
+La comisión de la Ruta de los Comilones conoce todos los espacios de la ruta, y uno de estos es el espacio delegado, quien es el que más integrantes tenga. Si hay una urgencia total en un kilómetro dado, todos los espacios, sin importar qué sean, se mudan a ese kilómetro a ayudar. Además, los negocios de comidas venden su plato más barato y las estaciones de policías, por las dudas, echan a todos los miembros de su delegación.
 
 *Ejemplos:*
 
