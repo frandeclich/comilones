@@ -18,6 +18,6 @@ En los negocios de comida sólo trabajan sus dueños y sus respectivas esposas, 
 
 En la ruta también hay otro tipo de espacios, como las estaciones de policías. Ellas se establecen en un lugar (pueden mudarse a otro km de la ruta), y tienen una delegación, que puede ser echada en cualquier momento por las altas autoridades.
 
-La estación del Km 42 tiene a los policías Ricardo, Ricarda, Ricardón, Ricardito y Ricardita
-La estación del Km 10 tiene solamente a Guillermo
+- La estación del Km 42 tiene a los policías Ricardo, Ricarda, Ricardón, Ricardito y Ricardita
+- La estación del Km 10 tiene solamente a Guillermo
 
